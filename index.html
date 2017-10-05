@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>trains</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron title">
+    <h1>Trains</h1>
+  </div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Train Info</h3>
+    </div>
+    <div class="panel-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+          </tr>
+        </thead>
+
+        <tbody id="addNewEmployeesHere">
+        </tbody>
+      </table>
+
+    </div>  
+  </div>
+ 
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add Trains</h3>
+    </div>
+    <div class="panel-body">
+      <div class="input-group col-sm-12">
+        <label>Train Name:</label>
+        <input id="name" type="text" class="form-control" placeholder=" Train Name"><br>
+      </div><br>
+      <div class="input-group col-sm-12">
+        <label>Destination:</label>
+        <input id="dest" type="text" class="form-control" placeholder="Destination"><br>
+      </div><br>
+      <div class="input-group col-sm-12">
+        <label>First Train Time (00:00 AM)</label>
+        <input id="first" type="text" class="form-control" placeholder="00:00"><br>
+      </div><br>
+      <div class="input-group col-sm-12">
+        <label>Frequency (mins)</label>
+        <input id="freq" type="text" class="form-control" placeholder="mins"><br>
+      </div><br>
+
+      <div class = "col-sm-6">
+        <span class="input-group-btn">
+          <button id="submit" class="btn btn-default" type="button">Submit</button>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src="assets/javascript/javascript.js"></script>
+
+</body>
+</html>
